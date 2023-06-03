@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nomination Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display&display=swap');
+
+        :root {
+          --yellow:#f5bf23;
+          --black:#111;
+          --white:#fff;
+          --light-color:#666;
+          --light-bg:#eee;
+          --box-shadow:0px 2px 4px #000;
+          --border:.1rem solid rgba(0,0,0,.3);
+        }
+        .error {
+            color: red;
+        }
+        body{
+             margin: 0; 
+        }
+        section {
+            padding: 5rem;
+            margin: 2rem;
+            background-color: #eee;
+            border: 0.1rem solid rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+        * {
+          margin: 0;
+          padding: 0;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          outline: none;
+          border: none;
+          text-decoration: none;
+          font-family: 'Playfair Display', serif;
+        }
+
+        html {
+          font-size: 62.5%;
+          overflow-x: hidden;
+          scroll-behavior: smooth;
+          scroll-padding-top: 7rem;
+        }
+
+        html::-webkit-scrollbar {
+          width: 1rem;
+        }
+
+        html::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        html::-webkit-scrollbar-thumb {
+          background: var(--yellow);
+        }
+
+        body {
+          background-color: var(--light-bg);
+          color: var(--black);
+          padding: 2rem;
+        }
+
+        h1 {
+          font-family: 'Alice', sans-serif;
+          font-size: 3.5rem;
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 0 -2rem; /* Add this line to remove the horizontal space */
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 0 2rem; /* Add this line to add space between form and image */
+        }
+        
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2rem; /* Add this line to add space between form and image */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        form {
+          background-color: var(--white);
+          padding: 2rem;
+          border-radius: 0.5rem;
+          box-shadow: var(--box-shadow);
+        }
+
+        form div {
+          margin-bottom: 1.5rem;
+        }
+
+        label {
+          display: block;
+          margin-bottom: 0.5rem;
+          font-size: 1.6rem;
+          font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+          width: 100%;
+          padding: 1rem;
+          font-size: 1.6rem;
+          border: var(--border);
+          border-radius: 0.3rem;
+          background-color:var(--white);
+        }
+
+        textarea {
+          height: 10rem;
+          resize: vertical;
+        }
+
+        .error {
+          color: red;
+          font-size: 1.4rem;
+        }
+
+        input[type="submit"] {
+          display: block;
+          width: 100%;
+          padding: 1.5rem;
+          font-size: 1.6rem;
+          font-weight: bold;
+          text-align: center;
+          background-color: var(--yellow);
+          color: var(--black);
+          border-radius: 0.3rem;
+          cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+          background-color: var(--black);
+          color:#fff;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                margin: 0; /* Add this line to remove horizontal space on mobile */
+            }
+
+            .image-container {
+                margin-top: 2rem;
+                padding: 0; /* Add this line to remove horizontal padding on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Nomination Form</h1>
+    <div class="container">
+        <div class="form-container">
+            <form id="nominationForm" onsubmit="return validateForm()">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span id="nameError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="email">Email Id:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="emailError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    <span id="phoneNumberError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="position">Position:</label>
+                    <input type="text" id="position" name="position" required>
+                    <span id="positionError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="companyName">Company Name:</label>
+                    <input type="text" id="companyName" name="companyName" required>
+                    <span id="companyNameError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="industry">Working Industry:</label>
+                    <select id="industry" name="industry" required>
+                        <option value="">-- Please choose an option --</option>
+                        <option value="IT">IT</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                    <span id="industryError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                    <span id="addressError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="attendees">Number of People Attend Award:</label>
+                    <input type="number" id="attendees" name="attendees" required>
+                    <span id="attendeesError" class="error"></span>
+                </div>
+
+                <div>
+                    <label for="message">Your Message (optional):</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="image-container">
+            <img src="images/congrats-gold-trophy.gif" alt="Image">
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phoneNumber = document.getElementById('phoneNumber').value;
+            var position = document.getElementById('position').value;
+            var companyName = document.getElementById('companyName').value;
+            var industry = document.getElementById('industry').value;
+            var address = document.getElementById('address').value;
+            var attendees = document.getElementById('attendees').value;
+
+            var valid = true;
+
+            if (name.trim() === '') {
+                document.getElementById('nameError').textContent = 'Please fill out this field.';
+                valid = false;
+            } else {
+                document.getElementById('nameError').textContent = '';
+            }
+
+            if (email.trim() === '') {
+                document.getElementById('emailError').textContent = 'Please fill out this field.';
+                valid = false;
+            } else {
+                document.getElementById('emailError').textContent = '';
+            }
+
+            if (phoneNumber.trim() === '') {
+                document.getElementById('phoneNumberError').textContent = 'Please fill out this field.';
+                valid = false;
+            } else {
+                document.getElementById('phoneNumberError').textContent = '';
+            }
+
+            if (position.trim() === '') {
+                document.getElementById('positionError').textContent = 'Please fill out this field.';
+                valid = false;
+            } else {
+                document.getElementById('positionError').textContent = '';
+            }
+
+            if (companyName.trim() === '') {
+                document.getElementById('companyNameError').textContent = 'Please fill out this field.';
+                valid = false;
+            } else {
+                document.getElementById('companyNameError').textContent = '';
+            }
+
+            if (industry === '') {
+                document.getElementById('industryError').textContent = 'Please fill out this field.';
+                valid = false;
+            } else {
+                document.getElementById('industryError').textContent = '';
+            }
+
+            if (address.trim() === '') {
+                document.getElementById('addressError').textContent = 'Please fill out this field.';
+                valid = false;
+            } else {
+                document.getElementById('addressError').textContent = '';
+            }
+
+            if (attendees.trim() === '') {
+                document.getElementById('attendeesError').textContent = 'Please fill out this field.';
+                valid = false;
+            } else {
+                document.getElementById('attendeesError').textContent = '';
+            }
+
+            return valid;
+        }
+    </script>
+</body>
+</html>
+

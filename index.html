@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Business_SwiftNlift</title>
+   <link rel="shortcut icon" type="text/css" href="images/swiftnlift-web-logo.png">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a class="logo" href="#"><img src="images/swiftnlift-web-logo.png" alt="company logo" height="55px" width="150px"></a>
+
+   <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#Magazine">Magazine</a>
+      <a href="#news">News & Article'S</a>
+      <a href="#Nomination">Nomination</a>
+      <a href="#contact">contact</a>
+      <a href="#blogs">blogs</a>
+   </nav>
+
+   <div class="icons">
+   <div id="menu-btn" class="fas fa-bars"></div>
+   <div id="info-btn" class="fas fa-info-circle"></div>
+   <div id="search-btn" class="fas fa-search"></div>
+   <div id="login-btn" class="fas fa-user"></div>
+   <div id="signup-btn" class="fas fa-user-plus"></div>
+   </div>
+
+   <form action="" class="search-form">
+      <input type="search" name="" placeholder="Search here..." id="search-box">
+      <button for="search-box" class="fas fa-search"></button>
+   </form>
+
+   <form action="" class="login-form">
+     <div class="close-contact-info fas fa-times"></div>
+      <h3>login form</h3>
+      <input type="email" placeholder="enter your email" class="box" autofocus required>
+      <input type="password" placeholder="enter your password" class="box" required>
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">Remember me</label>
+         <a href="#">Forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+   </form>
+
+    <form action="" class="signup-form">
+      <div class="close-contact-info fas fa-times"></div>
+      <h3>Sign up form</h3>
+      <input type="text" placeholder="Enter your name" class="box" required>
+      <input type="email" placeholder="Enter your email" class="box" required>
+      <input type="password" placeholder="Enter your password" class="box" required>
+      <input type="password" placeholder="Confirm password" class="box" required>
+      <input type="submit" value="Sign up now" class="btn">
+   </form>
+</header>
+
+<div class="contact-info">
+
+   <div id="close-contact-info" class="fas fa-times"></div>
+
+   <div class="info">
+      <i class="fas fa-phone"></i>
+      <h3>phone number</h3>
+      <p>+123-456-7890</p>
+      <p>+111-222-3333</p>
+   </div>
+
+   <div class="info">
+      <i class="fas fa-envelope"></i>
+      <h3>email address</h3>
+      <p>shaikhanas@gmail.com</p>
+      <p>anasbhai@gmail.com</p>
+   </div>
+
+   <div class="info">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>office address</h3>
+      <p>mumbai, india - 400104</p>
+   </div>
+
+   <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+   </div>
+
+</div>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home" style="background:url(images/back.jpg);">
+<div class="row">
+    <div class="content">
+       <h3>Welcome to Swiftnlift</h3>
+       <p>Presents by Swiftnlift Media Tech LLC</p>
+       <button id="nominationButton">Nominate</a></button>
+    </div>
+
+    <div class="swiper img-slider">
+       <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide"><img src="images/img-1.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/img-2.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/img-3.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/img-4.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/img-5.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/img-6.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/mag-5.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/mag-6.jpg" alt=""></a>
+          <a href="#" class="swiper-slide"><img src="images/mag-7.jpg" alt=""></a>
+       </div>
+    </div>
+ </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- Magazine section starts  -->
+
+<section class="magazine" id="Magazine">
+
+   <h1 class="heading">Magazine</h1>
+
+    <div class="filter-buttons">
+        <div class="buttons active" data-filter="all">All</div>
+        <div class="buttons" data-filter="latest">2023</div>
+        <div class="buttons" data-filter="latest-1">2022</div>
+        <div class="buttons" data-filter="latest-2">2021</div>
+        <div class="buttons" data-filter="latest-3">2020</div>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box" data-item="latest">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-1">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-2">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-3.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-3">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-4.jpg" alt="">
+            </div>
+        </div>
+       
+
+        <div class="box" data-item="latest">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-5.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-1">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-6.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-2">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-7.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-3">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-8.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="box" data-item="latest">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-9.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-1">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-10.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-2">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-11.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-3">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-12.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="box" data-item="latest">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-13.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-1">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-14.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-2">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-15.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-3">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-16.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-17.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-1">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-18.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-2">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-19.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-3">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-20.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="box" data-item="latest">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-21.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-1">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-22.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-2">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-23.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-3">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-24.jpg" alt="">
+            </div>
+        </div>
+
+
+        <div class="box" data-item="latest">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-25.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-1">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-26.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-2">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-27.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="box" data-item="latest-3">
+            <div class="icons">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="image">
+                <img src="images/mag-28.jpg" alt="">
+            </div>
+        </div>
+       
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- News section starts  -->
+
+<section class="news" id="news">
+
+   <h1 class="heading">News & Article'S</h1>
+
+    <div class="card-holder">
+        <div class="card">
+            <img src="images/n-1.jpg" alt="n1" class="card__img">
+            <div class="card-contents">
+                <h1 class="card__name">The 5 Drivers of Globalisation in International Business</h1>
+                <p>Technological advancements have revolutionized the way we communicate, access information, and conduct business<span class="dots">...</span><span class="more-text"> Globalization has become a prominent force shaping the world economy, driving the growth of international trade, investment, and cultural exchange. In the world of international business, globalization has brought about significant changes in the way companies operate, innovate and compete.Technological advancements have revolutionized the way we communicate, access information, and conduct business.</span></p>
+                <button onclick="myFunction(1)" class="myBtn">Read more...</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/n-2.jpg" alt="n2" class="card__img">
+            <div class="card-contents">
+                <h1 class="card__name">Basic Issues in International Licensing</h1>
+                <p>International licensing agreements have become increasingly popular for businesses looking to expand their reach and increase revenue.<span class="dots">...</span><span class="more-text"> These agreements allow companies to license their intellectual property to partners in other countries, but they can also be complex and involve various legal and financial challenges. In this article, we will discuss the basic issues that arise in international licensing agreements and how companies can navigate them successfully.The licensor provides the licensee with the right to use its intellectual property.
+                </span></p>
+                <button onclick="myFunction(2)" class="myBtn">Read more...</button>
+            </div>
+        </div>
+
+        <div class="card">
+        
+            <img src="images/n-3.jpg" alt="n3" class="card__img">
+            <div class="card-contents">
+                <h1 class="card__name">To Benefits and Challenges in 2023</h1>
+                <p>The adoption of International Financial Reporting Standards (IFRS) by the European significant milestone in the world of finance.<span class="dots">...</span><span class="more-text"> The move towards a single set of financial reporting standards has had a profound impact on the EU economy, making it easier for companies to do business across borders, increasing transparency, and improving the comparability of financial statements.The adoption of IFRS has several benefits, both for individual companies and the EU economy.it simplifies financial reporting, reducing the costs of preparing financial statements.</span></p>
+                <button onclick="myFunction(3)" class="myBtn">Read more...</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/n-4.jpg" alt="n4" class="card__img">
+            <div class="card-contents">
+                <h1 class="card__name">To Navigating the Global Economy &Business </h1>
+               <P>The global economy and business environment are ever-changing, and the year 2023 promises to be no exception<span class="dots">...</span><span class="more-text"> In this article, we will explore some of the key trends and insights that businesses should be aware of as they navigate the complex and often the challenging landscape of the global economy.However, with the right strategies and insights, there are also opportunities for growth and success.the curve and succeed in the ever-changing global economy.  So, grab a cup of coffee, sit back, and join us on this journey through the world of business in 2023.</span></P>
+                <button onclick="myFunction(4)" class="myBtn">Read more...</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-holder">
+        <div class="card">
+            <img src="images/p1.jpg" alt="n1" class="card__img">
+            <div class="card-contents">
+                <h1 class="card__name">The Wemade</h1>
+                <p>Henry Chang, CEO of Wemade, discusses the inter-game ecosystem at GDC 2023.“The Future of Gaming: Inter-game Play and Beyond” speech at this year’s<span class="dots">...</span><span class="more-text"> Game Developers Conference (GDC) in San Francisco was well-timed given that much of the discussion there focused on the numerous directions that the gaming industry could take. Henry went into great depth about how game developers and studios are paving the way for the future of gaming by implementing blockchain technology and fostering unrestricted cross-platform play-in-and-between games.  
+                </p>
+                <button onclick="myFunction(5)" class="myBtn">Read more...</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/p2.jpg" alt="n2" class="card__img">
+            <div class="card-contents">
+                <h1 class="card__name">The valiabiz</h1>
+                <p>Greenwich, Connecticut, March 23, 2023 — Valiabiz, LLC, the first and only all-inclusive business management and development service, is pleased to announce<span class="dots">...</span><span class="more-text"> its most recent plans to revolutionize the sector: a network of Valiabiz business centers across the country that will offer all of its members a posh and exclusive in-person experience.The anticipated growth would change Valiabiz’s entirely online business strategy to one that emphasizes a face-to-face interaction.Over the next 18 months, 31 new locations in different states will be opened as part of expansion plans in June 2023.</p>
+                <button onclick="myFunction(6)" class="myBtn">Read more...</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/p3.jpg" alt="n1" class="card__img">
+            <div class="card-contents">
+                <h1 class="card__name">The RedDrop</h1>
+                <p>RedDrop co-founder and seasoned elementary school teacher Dana Roberts said“With the introduction of FL HB1069, Florida is setting a dangerous precedent<span class="dots">...</span><span class="more-text">  and creating a landscape that unquestionably does not protect the health and wellness of our young girls.” “I recently had a student who started her period but didn’t comprehend what was happening to her body, crying in the restroom as she thought she was going to die. RedDrop was developed to assist young females in this process by educating and informing them.wellness of our young girls.” They require assistance and instruction, not political rhetoric.</p>
+                <button onclick="myFunction(7)" class="myBtn">Read more...</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/p4.jpg" alt="n1" class="card__img">
+            <div class="card-contents">
+                <h1 class="card__name">Navigating the Global Economy</h1>
+                <p>The global economy and business environment are ever-changing, and the year 2023 promises to be no exception.<span class="dots">...</span><span class="more-text">In this article, we will explore some of the key trends and insights that businesses should be aware of as they navigate the complex and often the challenging landscapearticle, we will explore some of  of the global economy.However, with the right strategies and insights, there are also opportunities for growth and successSo, grab a cup of coffee,article, we will explore some of the key trends sit back, and join us on this journey through the world of business in 2023.</p>
+                <button onclick="myFunction(8)" class="myBtn">Read more...</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Nomination" class="nomination">
+        <h1 class="heading">Nomination</h1>
+
+        <div class="swiper nominate-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide event">
+                    <img src="images/nomination.jpg" alt="" width="286px" height="300px" >
+                </div>
+
+                <div class="swiper-slide event">
+                    <img src="images/nomination1.jpg" alt="" width="286px" height="300px">
+                </div>
+
+                <div class="swiper-slide event">
+                    <img src="images/nomination2.jpg" alt="" width="286px" height="300px">
+                </div>
+
+                <div class="swiper-slide event">
+                    <img src="images/nomination3.jpg" alt="" width="286px" height="300px">
+                </div>
+                
+                <div class="swiper-slide event">
+                    <img src="images/nomination4.jpg" alt="" width="286px" height="300px">
+                </div>
+
+                <div class="swiper-slide event">
+                    <img src="images/nomination5.jpg" alt="" width="286px" height="300px">
+                </div>
+
+                <div class="swiper-slide event">
+                    <img src="images/nomination6.jpg" alt="" width="286px" height="300px">
+                </div>
+
+                <div class="swiper-slide event">
+                    <img src="images/nomination7.jpg" alt="" width="286px" height="300px">
+                </div>
+
+                <div class="swiper-slide event">
+                    <img src="images/nomination8.jpg" alt="" width="286px" height="300px">
+                </div>
+
+                <div class="swiper-slide event">
+                    <img src="images/nomination9.jpg" alt="" width="286px" height="300px">
+                </div>
+
+                <div class="swiper-slide event">
+                    <img src="images/nomination10.jpg" alt="" width="286px" height="300px">
+                </div>
+                
+                <div class="swiper-slide event">
+                    <img src="images/nomination11.jpg" alt="" width="286px" height="300px">
+                </div>
+                
+                <div class="swiper-slide event">
+                    <img src="images/nomination12.jpg" alt="" width="286px" height="300px">
+                </div>
+                
+                <div class="swiper-slide event">
+                    <img src="images/nomination13.jpg" alt="" width="286px" height="300px">
+                </div>
+
+            </div>
+             <div class="swiper-button-next"></div>
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-pagination"></div>
+        </div>
+        <div class="banner">
+            <div class="reg"><img src="images/banner.png" alt="" width=100% height=175px></div>          
+        </div>
+</section>
+    <!-- Nomination Section End -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <h1 class="heading"> contact us </h1>
+
+   <div class="row">
+
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15076.89592087332!2d72.8319697277345!3d19.14167056419224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1641716772852!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+
+    <form action="" novalidate>
+  <h3>Get in touch</h3>
+  <input type="text" class="box" id="name" placeholder="Enter name" required />
+  <input type="email" class="box" id="email" placeholder="Enter email" required />
+  <input type="tel" class="box" id="phone" placeholder="Enter phone number" required />
+  <textarea name="message" placeholder="Message" class="box" id="message" cols="30" rows="10" required></textarea>
+  <button class="box" onclick="validateForm()" style="background-color:#54B4D3; box-shadow: 0px 2px 4px #000; color: #000;">Submit</button>
+</form>
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+   <h1 class="heading">Previous Event</h1>
+
+   <div class="swiper blogs-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog.jpg" alt="">
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog2.jpg" alt="">
+            </div>
+            
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog3.jpg" alt="">
+            </div>
+            
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog4.jpg" alt="">
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog5.jpg" alt="">
+            </div>
+         </div>
+         
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog6.jpg" alt="">
+            </div>
+         </div>
+        
+        <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog6.jpg" alt="">
+            </div>
+         </div>
+      </div>
+
+   </div>
+ <section id="faq">
+    <div class="container faq">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="accordions">
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item1">
+                  <h3>Can I still become a sponsor and/or partner? <i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item1">
+                  <p>
+                    Sponsoring and/or partnering up with the Swiftnlift Business Excellence Awards exposes your organisation to decision makers, business leaders and dynamic corporate partners who value innovative thinking and commitment to the business industry. We offer a wide range of sponsorship levels to maximise your company’s visibility. To learn more, get in touch with us. sponsor@swiftnliftevents.com
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item2">
+                  <h3>What if I'm not sure which category to enter? <i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item2">
+                  <p>
+                    Don’t worry. Just enter the individual, programme or workplace category that you think best suits your entry. If the judges recognise that an entry shows strength in another category, or consider another category would be more appropriate for that entry, they can to change any entry’s category at their discretion.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item3">
+                  <h3>Are categories subject to eligibility requirements?<i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item3">
+                  <p>
+                    Yes. Each category has its own eligibility requirements as set out on the categories page.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item4">
+                  <h3>I'd like to sponsor a particular category, can I do this? <i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item4">
+                  <p>
+                   If your chosen category does not currently have a sponsor, please contact us. We offer existing sponsors a right of first refusal to renew their sponsorship. Categories become open for new sponsor if the existing sponsors do not exercise their renewal right.
+                  </p>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item5">
+                  <h3>Can a workplace or individual be entered in multiple categories? <i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item5">
+                  <p>
+                  Yes, but please minimise the total number of entries for each organisation. This will help keep the judging process manageable. The number of entries submitted for an organisation should not exceed the following:
+                  1]Individual categories: one or two entries in total across all award categories in this class
+                  2]Programme and Excellence categories: not more than one entry in total across all award categories in this class.
+                  3]Workplace categories: not more than one entry in total across all award categories in this class.
+                    The judges may merge entries from a single workplace if they consider that multiple substantially similar entries have been submitted.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item6">
+                  <h3>Does it cost to enter?<i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item6">
+                  <p>
+                   No. The Swiftnlift Business Excellence Awards are free to enter.
+                  </p>
+                </div>
+              </div>
+               
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item7">
+                  <h3>How do I find out more information about becoming a sponsor? <i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item7">
+                  <p>
+                 You can learn more on the sponsorship page. If questions or require further information, please contact us.
+                  </p>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-title" data-tab="item8">
+                  <h3>Other than sponsoring an awards category, how else can my organisation support this event? <i class="fa fa-chevron-down"></i></h3>
+                </div>
+                <div class="accordion-content" id="item8">
+                  <p>
+                  If you provide goods or services that might be helpful as part of an awards programme, awards ceremony, and gala dinner, please get in touch for more information on how you can become a value event support partner.Other event support partners have provided goods or services at no charge, at discounted rates, or have waived certain fees that would apply to more conventional commercial events.
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- client logo section starts -->
+
+<section class="logo-container">
+   <div class="swiper logo-slider">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide slide"><img src="images/client-logo-1.png" alt=""></div>
+         <div class="swiper-slide slide"><img src="images/client-logo-2.png" alt=""></div>
+         <div class="swiper-slide slide"><img src="images/client-logo-3.png" alt=""></div>
+         <div class="swiper-slide slide"><img src="images/client-logo-4.png" alt=""></div>
+         <div class="swiper-slide slide"><img src="images/client-logo-5.png" alt=""></div>
+         <div class="swiper-slide slide"><img src="images/client-logo-6.png" alt=""></div>
+      </div>
+   </div>
+</section>
+
+<!-- client logo section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+ <footer class="footer">
+     <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#Magazine">Magazine</a></li>
+                   <li><a href="#news">News & Article'S</a></li>
+                   <li><a href="#Nomination">Nomination</a></li>
+                   <li><a href="#contact">contact</a></li>
+                   <li><a href="#blogs">blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Nomination</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Blogs</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">Details</a></li>
+                    <li><a href="#">Opportunity</a></li>
+                    <li><a href="#">Function</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+     </div>
+  </footer>
+
+
+</section>
+
+<!-- footer section ends -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" charset="utf-8"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
+
+
+
+
